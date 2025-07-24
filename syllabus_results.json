@@ -1,0 +1,294 @@
+[
+  {
+    "col0": ""
+  },
+  {
+    "col0": "2",
+    "syllabusUrl": "javascript:void(0);"
+  },
+  {
+    "col0": "No",
+    "col1": "講義コード",
+    "col2": "講義名",
+    "col3": "セメスタ",
+    "col4": "開講期間 曜日・時限",
+    "col5": "担当教員"
+  },
+  {
+    "col0": "1",
+    "col1": "010081AA",
+    "col2": "日本語初級Ⅰ AA",
+    "syllabusUrl": "https://portal2.apu.ac.jp/campusp/slbssbdr.do?value(risyunen)=2024&value(semekikn)=1&value(kougicd)=010081AA&value(crclumcd)=",
+    "col3": "春",
+    "col4": "春セメスター　月曜日　２時限\n春セメスター　火曜日　２時限\n春セメスター　木曜日　２時限\n春セメスター　金曜日　２時限",
+    "col5": "高田 亮\n多田 利恵"
+  },
+  {
+    "col0": "2",
+    "col1": "010081AB",
+    "col2": "日本語初級Ⅰ AB",
+    "syllabusUrl": "https://portal2.apu.ac.jp/campusp/slbssbdr.do?value(risyunen)=2024&value(semekikn)=1&value(kougicd)=010081AB&value(crclumcd)=",
+    "col3": "春",
+    "col4": "春セメスター　月曜日　２時限\n春セメスター　火曜日　２時限\n春セメスター　木曜日　２時限\n春セメスター　金曜日　２時限",
+    "col5": "寺井 敦子"
+  },
+  {
+    "col0": "3",
+    "col1": "010081AC",
+    "col2": "日本語初級Ⅰ AC",
+    "syllabusUrl": "https://portal2.apu.ac.jp/campusp/slbssbdr.do?value(risyunen)=2024&value(semekikn)=1&value(kougicd)=010081AC&value(crclumcd)=",
+    "col3": "春",
+    "col4": "春セメスター　月曜日　２時限\n春セメスター　火曜日　２時限\n春セメスター　木曜日　２時限\n春セメスター　金曜日　２時限",
+    "col5": "上田 優花"
+  },
+  {
+    "col0": "4",
+    "col1": "010081AD",
+    "col2": "日本語初級Ⅰ AD",
+    "syllabusUrl": "https://portal2.apu.ac.jp/campusp/slbssbdr.do?value(risyunen)=2024&value(semekikn)=1&value(kougicd)=010081AD&value(crclumcd)=",
+    "col3": "春",
+    "col4": "春セメスター　月曜日　２時限\n春セメスター　火曜日　２時限\n春セメスター　木曜日　２時限\n春セメスター　金曜日　２時限",
+    "col5": "伊達 久美子\n栃原 玲子"
+  },
+  {
+    "col0": "5",
+    "col1": "010081AE",
+    "col2": "日本語初級Ⅰ AE",
+    "syllabusUrl": "https://portal2.apu.ac.jp/campusp/slbssbdr.do?value(risyunen)=2024&value(semekikn)=1&value(kougicd)=010081AE&value(crclumcd)=",
+    "col3": "春",
+    "col4": "春セメスター　月曜日　２時限\n春セメスター　火曜日　２時限\n春セメスター　木曜日　２時限\n春セメスター　金曜日　２時限",
+    "col5": "星野 智子"
+  },
+  {
+    "col0": "6",
+    "col1": "010081BA",
+    "col2": "日本語初級Ⅰ BA",
+    "syllabusUrl": "https://portal2.apu.ac.jp/campusp/slbssbdr.do?value(risyunen)=2024&value(semekikn)=1&value(kougicd)=010081BA&value(crclumcd)=",
+    "col3": "春",
+    "col4": "春セメスター　月曜日　１時限\n春セメスター　火曜日　１時限\n春セメスター　木曜日　１時限\n春セメスター　金曜日　１時限",
+    "col5": "多田 利恵"
+  },
+  {
+    "col0": "7",
+    "col1": "010081BB",
+    "col2": "日本語初級Ⅰ BB",
+    "syllabusUrl": "https://portal2.apu.ac.jp/campusp/slbssbdr.do?value(risyunen)=2024&value(semekikn)=1&value(kougicd)=010081BB&value(crclumcd)=",
+    "col3": "春",
+    "col4": "春セメスター　月曜日　１時限\n春セメスター　火曜日　１時限\n春セメスター　木曜日　１時限\n春セメスター　金曜日　１時限",
+    "col5": "井上 佳子"
+  },
+  {
+    "col0": "8",
+    "col1": "010081BC",
+    "col2": "日本語初級Ⅰ BC",
+    "syllabusUrl": "https://portal2.apu.ac.jp/campusp/slbssbdr.do?value(risyunen)=2024&value(semekikn)=1&value(kougicd)=010081BC&value(crclumcd)=",
+    "col3": "春",
+    "col4": "春セメスター　月曜日　１時限\n春セメスター　火曜日　１時限\n春セメスター　木曜日　１時限\n春セメスター　金曜日　１時限",
+    "col5": "栃原 玲子"
+  },
+  {
+    "col0": "9",
+    "col1": "010081BD",
+    "col2": "日本語初級Ⅰ BD",
+    "syllabusUrl": "https://portal2.apu.ac.jp/campusp/slbssbdr.do?value(risyunen)=2024&value(semekikn)=1&value(kougicd)=010081BD&value(crclumcd)=",
+    "col3": "春",
+    "col4": "春セメスター　月曜日　１時限\n春セメスター　火曜日　１時限\n春セメスター　木曜日　１時限\n春セメスター　金曜日　１時限",
+    "col5": "星野 智子"
+  },
+  {
+    "col0": "10",
+    "col1": "010081BE",
+    "col2": "日本語初級Ⅰ BE",
+    "syllabusUrl": "https://portal2.apu.ac.jp/campusp/slbssbdr.do?value(risyunen)=2024&value(semekikn)=1&value(kougicd)=010081BE&value(crclumcd)=",
+    "col3": "春",
+    "col4": "春セメスター　月曜日　１時限\n春セメスター　火曜日　１時限\n春セメスター　木曜日　１時限\n春セメスター　金曜日　１時限",
+    "col5": "水戸 貴久"
+  },
+  {
+    "col0": "11",
+    "col1": "010082AA",
+    "col2": "日本語初級Ⅰ AA",
+    "syllabusUrl": "https://portal2.apu.ac.jp/campusp/slbssbdr.do?value(risyunen)=2024&value(semekikn)=1&value(kougicd)=010082AA&value(crclumcd)=",
+    "col3": "春",
+    "col4": "春セメスター　月曜日　２時限\n春セメスター　火曜日　２時限\n春セメスター　木曜日　２時限\n春セメスター　金曜日　２時限",
+    "col5": "高田 亮\n多田 利恵"
+  },
+  {
+    "col0": "12",
+    "col1": "010082AB",
+    "col2": "日本語初級Ⅰ AB",
+    "syllabusUrl": "https://portal2.apu.ac.jp/campusp/slbssbdr.do?value(risyunen)=2024&value(semekikn)=1&value(kougicd)=010082AB&value(crclumcd)=",
+    "col3": "春",
+    "col4": "春セメスター　月曜日　２時限\n春セメスター　火曜日　２時限\n春セメスター　木曜日　２時限\n春セメスター　金曜日　２時限",
+    "col5": "寺井 敦子"
+  },
+  {
+    "col0": "13",
+    "col1": "010082AC",
+    "col2": "日本語初級Ⅰ AC",
+    "syllabusUrl": "https://portal2.apu.ac.jp/campusp/slbssbdr.do?value(risyunen)=2024&value(semekikn)=1&value(kougicd)=010082AC&value(crclumcd)=",
+    "col3": "春",
+    "col4": "春セメスター　月曜日　２時限\n春セメスター　火曜日　２時限\n春セメスター　木曜日　２時限\n春セメスター　金曜日　２時限",
+    "col5": "上田 優花"
+  },
+  {
+    "col0": "14",
+    "col1": "010082AD",
+    "col2": "日本語初級Ⅰ AD",
+    "syllabusUrl": "https://portal2.apu.ac.jp/campusp/slbssbdr.do?value(risyunen)=2024&value(semekikn)=1&value(kougicd)=010082AD&value(crclumcd)=",
+    "col3": "春",
+    "col4": "春セメスター　月曜日　２時限\n春セメスター　火曜日　２時限\n春セメスター　木曜日　２時限\n春セメスター　金曜日　２時限",
+    "col5": "伊達 久美子\n栃原 玲子"
+  },
+  {
+    "col0": "15",
+    "col1": "010082AE",
+    "col2": "日本語初級Ⅰ AE",
+    "syllabusUrl": "https://portal2.apu.ac.jp/campusp/slbssbdr.do?value(risyunen)=2024&value(semekikn)=1&value(kougicd)=010082AE&value(crclumcd)=",
+    "col3": "春",
+    "col4": "春セメスター　月曜日　２時限\n春セメスター　火曜日　２時限\n春セメスター　木曜日　２時限\n春セメスター　金曜日　２時限",
+    "col5": "星野 智子"
+  },
+  {
+    "col0": "16",
+    "col1": "010082BA",
+    "col2": "日本語初級Ⅰ BA",
+    "syllabusUrl": "https://portal2.apu.ac.jp/campusp/slbssbdr.do?value(risyunen)=2024&value(semekikn)=1&value(kougicd)=010082BA&value(crclumcd)=",
+    "col3": "春",
+    "col4": "春セメスター　月曜日　１時限\n春セメスター　火曜日　１時限\n春セメスター　木曜日　１時限\n春セメスター　金曜日　１時限",
+    "col5": "多田 利恵"
+  },
+  {
+    "col0": "17",
+    "col1": "010082BB",
+    "col2": "日本語初級Ⅰ BB",
+    "syllabusUrl": "https://portal2.apu.ac.jp/campusp/slbssbdr.do?value(risyunen)=2024&value(semekikn)=1&value(kougicd)=010082BB&value(crclumcd)=",
+    "col3": "春",
+    "col4": "春セメスター　月曜日　１時限\n春セメスター　火曜日　１時限\n春セメスター　木曜日　１時限\n春セメスター　金曜日　１時限",
+    "col5": "井上 佳子"
+  },
+  {
+    "col0": "18",
+    "col1": "010082BC",
+    "col2": "日本語初級Ⅰ BC",
+    "syllabusUrl": "https://portal2.apu.ac.jp/campusp/slbssbdr.do?value(risyunen)=2024&value(semekikn)=1&value(kougicd)=010082BC&value(crclumcd)=",
+    "col3": "春",
+    "col4": "春セメスター　月曜日　１時限\n春セメスター　火曜日　１時限\n春セメスター　木曜日　１時限\n春セメスター　金曜日　１時限",
+    "col5": "栃原 玲子"
+  },
+  {
+    "col0": "19",
+    "col1": "010082BD",
+    "col2": "日本語初級Ⅰ BD",
+    "syllabusUrl": "https://portal2.apu.ac.jp/campusp/slbssbdr.do?value(risyunen)=2024&value(semekikn)=1&value(kougicd)=010082BD&value(crclumcd)=",
+    "col3": "春",
+    "col4": "春セメスター　月曜日　１時限\n春セメスター　火曜日　１時限\n春セメスター　木曜日　１時限\n春セメスター　金曜日　１時限",
+    "col5": "星野 智子"
+  },
+  {
+    "col0": "20",
+    "col1": "010082BE",
+    "col2": "日本語初級Ⅰ BE",
+    "syllabusUrl": "https://portal2.apu.ac.jp/campusp/slbssbdr.do?value(risyunen)=2024&value(semekikn)=1&value(kougicd)=010082BE&value(crclumcd)=",
+    "col3": "春",
+    "col4": "春セメスター　月曜日　１時限\n春セメスター　火曜日　１時限\n春セメスター　木曜日　１時限\n春セメスター　金曜日　１時限",
+    "col5": "水戸 貴久"
+  },
+  {
+    "col0": "21",
+    "col1": "010083AA",
+    "col2": "日本語初級Ⅱ AA",
+    "syllabusUrl": "https://portal2.apu.ac.jp/campusp/slbssbdr.do?value(risyunen)=2024&value(semekikn)=1&value(kougicd)=010083AA&value(crclumcd)=",
+    "col3": "春",
+    "col4": "春セメスター　月曜日　４時限\n春セメスター　火曜日　４時限\n春セメスター　木曜日　４時限\n春セメスター　金曜日　４時限",
+    "col5": "バナ 登美子"
+  },
+  {
+    "col0": "22",
+    "col1": "010083AB",
+    "col2": "日本語初級Ⅱ AB",
+    "syllabusUrl": "https://portal2.apu.ac.jp/campusp/slbssbdr.do?value(risyunen)=2024&value(semekikn)=1&value(kougicd)=010083AB&value(crclumcd)=",
+    "col3": "春",
+    "col4": "春セメスター　月曜日　４時限\n春セメスター　火曜日　４時限\n春セメスター　木曜日　４時限\n春セメスター　金曜日　４時限",
+    "col5": "山田 祐也"
+  },
+  {
+    "col0": "23",
+    "col1": "010083AC",
+    "col2": "日本語初級Ⅱ AC",
+    "syllabusUrl": "https://portal2.apu.ac.jp/campusp/slbssbdr.do?value(risyunen)=2024&value(semekikn)=1&value(kougicd)=010083AC&value(crclumcd)=",
+    "col3": "春",
+    "col4": "春セメスター　月曜日　４時限\n春セメスター　火曜日　４時限\n春セメスター　木曜日　４時限\n春セメスター　金曜日　４時限",
+    "col5": "水戸 貴久"
+  },
+  {
+    "col0": "24",
+    "col1": "010083AD",
+    "col2": "日本語初級Ⅱ AD",
+    "syllabusUrl": "https://portal2.apu.ac.jp/campusp/slbssbdr.do?value(risyunen)=2024&value(semekikn)=1&value(kougicd)=010083AD&value(crclumcd)=",
+    "col3": "春",
+    "col4": "春セメスター　月曜日　４時限\n春セメスター　火曜日　４時限\n春セメスター　木曜日　４時限\n春セメスター　金曜日　４時限",
+    "col5": "布尾 勝一郎"
+  },
+  {
+    "col0": "25",
+    "col1": "010083AE",
+    "col2": "日本語初級Ⅱ AE",
+    "syllabusUrl": "https://portal2.apu.ac.jp/campusp/slbssbdr.do?value(risyunen)=2024&value(semekikn)=1&value(kougicd)=010083AE&value(crclumcd)=",
+    "col3": "春",
+    "col4": "春セメスター　月曜日　４時限\n春セメスター　火曜日　４時限\n春セメスター　木曜日　４時限\n春セメスター　金曜日　４時限",
+    "col5": "後藤 美智子"
+  },
+  {
+    "col0": "26",
+    "col1": "010083AF",
+    "col2": "日本語初級Ⅱ AF",
+    "syllabusUrl": "https://portal2.apu.ac.jp/campusp/slbssbdr.do?value(risyunen)=2024&value(semekikn)=1&value(kougicd)=010083AF&value(crclumcd)=",
+    "col3": "春",
+    "col4": "春セメスター　月曜日　５時限\n春セメスター　火曜日　５時限\n春セメスター　木曜日　５時限\n春セメスター　金曜日　５時限",
+    "col5": "戸坂 弥寿美"
+  },
+  {
+    "col0": "27",
+    "col1": "010083AG",
+    "col2": "日本語初級Ⅱ AG",
+    "syllabusUrl": "https://portal2.apu.ac.jp/campusp/slbssbdr.do?value(risyunen)=2024&value(semekikn)=1&value(kougicd)=010083AG&value(crclumcd)=",
+    "col3": "春",
+    "col4": "春セメスター　月曜日　５時限\n春セメスター　火曜日　５時限\n春セメスター　木曜日　５時限\n春セメスター　金曜日　５時限",
+    "col5": "寺井 敦子\n吉田 真宏"
+  },
+  {
+    "col0": "28",
+    "col1": "010083AH",
+    "col2": "日本語初級Ⅱ AH",
+    "syllabusUrl": "https://portal2.apu.ac.jp/campusp/slbssbdr.do?value(risyunen)=2024&value(semekikn)=1&value(kougicd)=010083AH&value(crclumcd)=",
+    "col3": "春",
+    "col4": "春セメスター　月曜日　５時限\n春セメスター　火曜日　５時限\n春セメスター　木曜日　５時限\n春セメスター　金曜日　５時限",
+    "col5": "高田 亮"
+  },
+  {
+    "col0": "29",
+    "col1": "010083BA",
+    "col2": "日本語初級Ⅱ BA",
+    "syllabusUrl": "https://portal2.apu.ac.jp/campusp/slbssbdr.do?value(risyunen)=2024&value(semekikn)=1&value(kougicd)=010083BA&value(crclumcd)=",
+    "col3": "春",
+    "col4": "春セメスター　月曜日　３時限\n春セメスター　火曜日　３時限\n春セメスター　木曜日　３時限\n春セメスター　金曜日　３時限",
+    "col5": "山田 祐也"
+  },
+  {
+    "col0": "30",
+    "col1": "010083BB",
+    "col2": "日本語初級Ⅱ BB",
+    "syllabusUrl": "https://portal2.apu.ac.jp/campusp/slbssbdr.do?value(risyunen)=2024&value(semekikn)=1&value(kougicd)=010083BB&value(crclumcd)=",
+    "col3": "春",
+    "col4": "春セメスター　月曜日　３時限\n春セメスター　火曜日　３時限\n春セメスター　木曜日　３時限\n春セメスター　金曜日　３時限",
+    "col5": "バナ 登美子"
+  },
+  {
+    "col0": "2",
+    "syllabusUrl": "javascript:void(0);"
+  },
+  {
+    "col0": ""
+  }
+]
