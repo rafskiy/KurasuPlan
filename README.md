@@ -1,13 +1,13 @@
 # Kurasu Plan
 
-A modern, easy-to-use course planner and syllabus explorer for APU students.
+A modern, easy-to-use course planner and syllabus explorer for Undergraduate APU students.
 
 🌐 **Try it now:** [https://kurasu-plan.web.app](https://kurasu-plan.web.app)
 
 ---
 
 ## What is Kurasu Plan?
-Kurasu Plan helps APU (Ritsumeikan Asia Pacific University) students plan their semester, explore available courses, and view detailed syllabus information—all in one place, with a beautiful and intuitive interface.
+Kurasu Plan helps APU (Ritsumeikan Asia Pacific University) Undergraduate students plan their semester, explore available courses, and view detailed syllabus information—all in one place, with a beautiful and intuitive interface.
 
 ---
 
