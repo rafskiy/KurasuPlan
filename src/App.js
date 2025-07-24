@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import CourseDetail from './components/CourseDetail';
 import { InformationCircleIcon, TrashIcon, PlusIcon, XMarkIcon, ChevronDownIcon, PencilIcon, DocumentDuplicateIcon } from '@heroicons/react/24/outline';
 import * as XLSX from 'xlsx';
+import Feedback from './components/Feedback';
 
 // Helper to detect on-demand courses
 function isOnDemandCourse(course) {
@@ -60,13 +61,13 @@ function getTypeAndQuarter(term) {
   return { type: null, quarter: null };
 }
 
-// Update useCourses to use _clean_with_syllabus.json files
+// Update useCourses to use fetch from public/data instead of import from src/data
 function useCourses(college) {
   const [courses, setCourses] = React.useState([]);
   React.useEffect(() => {
-    import(`./data/${college}_clean_with_syllabus.json`).then(module => {
-      setCourses(module.default || module);
-    });
+    fetch(process.env.PUBLIC_URL + `/data/${college}_clean_with_syllabus.json`)
+      .then(res => res.json())
+      .then(data => setCourses(data));
   }, [college]);
   return courses;
 }
@@ -1119,6 +1120,7 @@ function App() {
     <Router>
       <nav className="w-full bg-[#aa003e] text-white py-3 px-4 flex gap-4 mb-4 shadow">
         <span className="font-bold">Kurasu Plan</span>
+        <Link to="/feedback" className="ml-4 underline hover:text-gray-200">Feedback</Link>
       </nav>
       <Routes>
         <Route path="/" element={
@@ -1385,6 +1387,7 @@ function App() {
             />
           </div>
         } />
+        <Route path="/feedback" element={<Feedback />} />
         <Route path="/syllabus/course/:idx" element={<CourseDetail />} />
       </Routes>
       <p className="mt-8 mb-2 text-xs text-gray-400 text-center">

@@ -1,10 +1,21 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import syllabusData from '../data/all_syllabus_details_2025.json';
 
 function CourseDetail() {
   const { idx } = useParams();
-  const course = syllabusData[idx];
+  const [course, setCourse] = useState(null);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    fetch(process.env.PUBLIC_URL + '/data/all_syllabus_details_2025.json')
+      .then(res => res.json())
+      .then(data => {
+        setCourse(data[idx]);
+        setLoading(false);
+      });
+  }, [idx]);
+
+  if (loading) return <div>Loading...</div>;
   if (!course) return <div>Course not found.</div>;
 
   return (

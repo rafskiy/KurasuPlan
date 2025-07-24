@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import apmData from '../data/apm_clean_with_syllabus.json';
-import apsData from '../data/aps_clean_with_syllabus.json';
-import stData from '../data/st_clean_with_syllabus.json';
+// Removed imports of large JSON files
+// const apmData = require('../data/apm_clean_with_syllabus.json');
+// const apsData = require('../data/aps_clean_with_syllabus.json');
+// const stData = require('../data/st_clean_with_syllabus.json');
 
-const allCourses = [...apmData, ...apsData, ...stData];
+// const allCourses = [...apmData, ...apsData, ...stData];
 
 function SyllabusModal({ syllabusDetail, onClose, course }) {
   useEffect(() => {}, [course]);
@@ -115,16 +116,17 @@ function SyllabusTable() {
   const [modalCourse, setModalCourse] = useState(null);
   const [view, setView] = useState('table'); // 'table' or 'card'
 
-  const filtered = allCourses.filter(course => {
-    const code = course.subjectCode || '';
-    const name = course.nameEn || '';
-    const instructor = course.instructorEn || '';
-    return (
-      code.toLowerCase().includes(search.toLowerCase()) ||
-      name.toLowerCase().includes(search.toLowerCase()) ||
-      instructor.toLowerCase().includes(search.toLowerCase())
-    );
-  });
+  // Removed allCourses and related filtering logic
+  // const filtered = allCourses.filter(course => {
+  //   const code = course.subjectCode || '';
+  //   const name = course.nameEn || '';
+  //   const instructor = course.instructorEn || '';
+  //   return (
+  //     code.toLowerCase().includes(search.toLowerCase()) ||
+  //     name.toLowerCase().includes(search.toLowerCase()) ||
+  //     instructor.toLowerCase().includes(search.toLowerCase())
+  //   );
+  // });
 
   return (
     <div className="p-2 sm:p-4">
@@ -170,67 +172,44 @@ function SyllabusTable() {
               </tr>
             </thead>
             <tbody>
-              {filtered.map((course, idx) => (
-                <tr key={idx} className={
-                  'transition ' +
-                  (idx % 2 === 0 ? 'bg-[#fdf6f9]' : 'bg-white/80') +
-                  ' hover:shadow-lg hover:bg-[#f8e6ec]'}>
-                  <td className="border-b border-[#e5b3c3] px-2 py-2 font-mono break-all max-w-[120px] align-middle">{course.subjectCode}</td>
-                  <td className="border-b border-[#e5b3c3] px-2 py-2 break-all max-w-[180px] align-middle">{course.nameEn}</td>
-                  <td className="border-b border-[#e5b3c3] px-2 py-2 break-all max-w-[120px] align-middle">{course.instructorEn}</td>
-                  <td className="border-b border-[#e5b3c3] px-2 py-2 text-center align-middle">
-                    {course.syllabusDetail ? (
-                      <button
-                        className="flex items-center justify-center gap-2 w-full sm:w-auto px-3 py-2 rounded-xl bg-[#aa003e] hover:bg-[#880030] text-white text-sm sm:text-base font-semibold shadow focus:outline-none focus:ring-2 focus:ring-[#e5b3c3] transition mb-1 sm:mb-0"
-                        style={{ minHeight: '40px' }}
-                        onClick={() => setModalCourse(course)}
-                      >
-                        <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
-                        <span className="hidden xs:inline">View Syllabus</span>
-                      </button>
-                    ) : (
-                      <span className="text-gray-400">No syllabus</span>
-                    )}
-                  </td>
-                </tr>
-              ))}
+              {/* Removed filtered.map and related logic */}
+              {/* This section will need to be updated to fetch courses dynamically */}
+              <tr>
+                <td className="border-b border-[#e5b3c3] px-2 py-2 font-mono break-all max-w-[120px] align-middle">Course Code</td>
+                <td className="border-b border-[#e5b3c3] px-2 py-2 break-all max-w-[180px] align-middle">Course Name</td>
+                <td className="border-b border-[#e5b3c3] px-2 py-2 break-all max-w-[120px] align-middle">Instructor</td>
+                <td className="border-b border-[#e5b3c3] px-2 py-2 text-center align-middle">
+                  {/* This will need to be updated to fetch syllabusDetail dynamically */}
+                  <span className="text-gray-400">No syllabus</span>
+                </td>
+              </tr>
             </tbody>
           </table>
         </div>
       ) : (
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-4">
-          {filtered.map((course, idx) => (
-            <div key={idx} className={
-              'bg-white/80 border border-[#e5b3c3] rounded-2xl shadow-xl p-6 flex flex-col gap-2 hover:shadow-2xl hover:bg-[#f8e6ec] transition ' +
-              (idx % 2 === 0 ? 'bg-[#fdf6f9]' : 'bg-white/80')
-            }>
-              <div className="flex items-center justify-between mb-1">
-                <span className="font-mono text-xs bg-[#f8e6ec] text-[#aa003e] px-2 py-1 rounded-full">{course.subjectCode}</span>
-                <span className="inline-block bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">{course.college?.toUpperCase() || ''}</span>
-              </div>
-              <div className="font-bold text-lg text-[#aa003e] mb-1">{course.nameEn}</div>
-              <div className="text-xs text-gray-600 mb-1">Instructor: <span className="font-semibold">{course.instructorEn}</span></div>
-              <div className="text-xs text-gray-500 mb-1">Semester: {course.semester || 'N/A'}</div>
-              <div className="flex-1"></div>
-              <div className="flex justify-end flex-col sm:flex-row gap-2 mt-2">
-                {course.syllabusDetail ? (
-                  <button
-                    className="flex items-center justify-center gap-2 w-full sm:w-auto px-3 py-2 rounded-xl bg-[#aa003e] hover:bg-[#880030] text-white text-sm sm:text-base font-semibold shadow focus:outline-none focus:ring-2 focus:ring-[#e5b3c3] transition"
-                    style={{ minHeight: '40px' }}
-                    onClick={() => setModalCourse(course)}
-                  >
-                    <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
-                    <span className="hidden xs:inline">View Syllabus</span>
-                  </button>
-                ) : (
-                  <span className="text-gray-400">No syllabus</span>
-                )}
-              </div>
+          {/* Removed filtered.map and related logic */}
+          {/* This section will need to be updated to fetch courses dynamically */}
+          <div className={
+            'bg-white/80 border border-[#e5b3c3] rounded-2xl shadow-xl p-6 flex flex-col gap-2 hover:shadow-2xl hover:bg-[#f8e6ec] transition ' +
+            'bg-white/80' // Fallback background for card view
+          }>
+            <div className="flex items-center justify-between mb-1">
+              <span className="font-mono text-xs bg-[#f8e6ec] text-[#aa003e] px-2 py-1 rounded-full">Course Code</span>
+              <span className="inline-block bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">College</span>
             </div>
-          ))}
+            <div className="font-bold text-lg text-[#aa003e] mb-1">Course Name</div>
+            <div className="text-xs text-gray-600 mb-1">Instructor: <span className="font-semibold">Instructor</span></div>
+            <div className="text-xs text-gray-500 mb-1">Semester: N/A</div>
+            <div className="flex-1"></div>
+            <div className="flex justify-end flex-col sm:flex-row gap-2 mt-2">
+              {/* This will need to be updated to fetch syllabusDetail dynamically */}
+              <span className="text-gray-400">No syllabus</span>
+            </div>
+          </div>
         </div>
       )}
-      <p className="mt-4 text-xs sm:text-sm text-gray-500 text-center">Showing {filtered.length} of {allCourses.length} courses</p>
+      <p className="mt-4 text-xs sm:text-sm text-gray-500 text-center">Showing 0 of 0 courses</p>
       {modalCourse && (
         <SyllabusModal
           syllabusDetail={modalCourse.syllabusDetail}
