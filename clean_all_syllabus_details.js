@@ -38,13 +38,11 @@ function cleanLargeJsonFile(input, output) {
           isFirst = false;
         }
       } catch (e) {
-        // skip invalid JSON
       }
     }
   });
 
   readStream.on('end', () => {
-    // Try to parse the last buffer
     buffer = buffer.trim();
     if (buffer.endsWith(']')) buffer = buffer.slice(0, -1);
     if (buffer.startsWith(',')) buffer = buffer.slice(1);
@@ -59,7 +57,6 @@ function cleanLargeJsonFile(input, output) {
             isFirst = false;
           }
         } catch (e) {
-          // skip invalid JSON
         }
       }
     }

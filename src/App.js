@@ -1,6 +1,4 @@
 import SyllabusModal from './components/SyllabusTable';
-// If you need SyllabusTable as a component, use the following line instead:
-// import SyllabusModal, { SyllabusTable } from './components/SyllabusTable';
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import CourseDetail from './components/CourseDetail';
@@ -8,7 +6,6 @@ import { InformationCircleIcon, TrashIcon, PlusIcon, XMarkIcon, ChevronDownIcon,
 import * as XLSX from 'xlsx';
 import Feedback from './components/Feedback';
 
-// Helper to detect on-demand courses
 function isOnDemandCourse(course) {
   return (
     (course.period && course.period.toString().toLowerCase() === 'ondemand') ||
@@ -16,7 +13,6 @@ function isOnDemandCourse(course) {
     (course.term && course.term.toString().toLowerCase().includes('on demand'))
   );
 }
-// Helper to check semester eligibility
 function isEligibleSemester(courseSemester, selectedSemester) {
   const num = Number(courseSemester);
   if (!isNaN(num)) return Number(selectedSemester) >= num;
@@ -42,7 +38,6 @@ const DAY_MAP = {
   'Saturday': 'Sat',
 };
 
-// Helper to determine type and quarter from term
 function getTypeAndQuarter(term) {
   if (!term) return { type: null, quarter: null };
   const t = term.trim().toLowerCase();
@@ -61,7 +56,6 @@ function getTypeAndQuarter(term) {
   return { type: null, quarter: null };
 }
 
-// Update useCourses to use fetch from public/data instead of import from src/data
 function useCourses(college) {
   const [courses, setCourses] = React.useState([]);
   React.useEffect(() => {
@@ -118,7 +112,6 @@ function Tooltip({ children, text }) {
   );
 }
 
-// TimetableGrid: update table and cell classes
 function TimetableGrid({ plannedCourses, onCellClick, onSyllabusClick }) {
   return (
     <div className="w-full overflow-x-auto">
@@ -581,7 +574,6 @@ function CourseList({ courses, onSyllabusClick }) {
   );
 }
 
-// TimetableListView: update card/list style
 function TimetableListView({ plannedCourses, onCellClick, onSyllabusClick }) {
   return (
     <div className="w-full flex flex-col gap-2">

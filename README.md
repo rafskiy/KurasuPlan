@@ -1,5 +1,4 @@
 # Kurasu Plan
-
 A modern, easy-to-use course planner and syllabus explorer for Undergraduate APU students.
 
 🌐 **Try it now:** [https://kurasu-plan.web.app](https://kurasu-plan.web.app)
@@ -71,3 +70,4 @@ If you have questions, suggestions, or find a bug, please use the feedback form 
 ---
 
 ### Also check out [shift-kiroku.web.app](https://shift-kiroku.web.app) to track your baito shift and manage it to calendar!
+

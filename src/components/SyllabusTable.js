@@ -1,21 +1,12 @@
 import React, { useState, useEffect } from 'react';
-// Removed imports of large JSON files
-// const apmData = require('../data/apm_clean_with_syllabus.json');
-// const apsData = require('../data/aps_clean_with_syllabus.json');
-// const stData = require('../data/st_clean_with_syllabus.json');
-
-// const allCourses = [...apmData, ...apsData, ...stData];
 
 function SyllabusModal({ syllabusDetail, onClose, course }) {
   useEffect(() => {}, [course]);
   if (!syllabusDetail) return <div className="p-4">No syllabus data available.</div>;
 
-  // Prefer using the array-of-arrays structure if available
   let tableRows = [];
   if (Array.isArray(syllabusDetail.tables) && syllabusDetail.tables.length > 0) {
-    // Flatten all tables into one array of rows
     tableRows = syllabusDetail.tables.flat().filter(row => Array.isArray(row) && row.some(cell => cell && cell.trim() !== ''));
-    // Map to label/value pairs: left = first non-empty, right = last non-empty
     tableRows = tableRows
       .map(row => {
         const nonEmpty = row.filter(cell => cell && cell.trim() !== '');
@@ -24,7 +15,6 @@ function SyllabusModal({ syllabusDetail, onClose, course }) {
       })
       .filter(Boolean);
   } else {
-    // Fallback: parse bodyText as before
     let fullBodyText = '';
     if (syllabusDetail.bodyText) {
       fullBodyText = syllabusDetail.bodyText;
@@ -50,7 +40,6 @@ function SyllabusModal({ syllabusDetail, onClose, course }) {
     tableRows = parseToTableRows(fullBodyText);
   }
 
-  // Helper to render URLs as clickable links
   function renderValue(value) {
     if (!value) return null;
     const urlRegex = /(https?:\/\/[^\s]+)/g;
@@ -114,19 +103,7 @@ function SyllabusModal({ syllabusDetail, onClose, course }) {
 function SyllabusTable() {
   const [search, setSearch] = useState('');
   const [modalCourse, setModalCourse] = useState(null);
-  const [view, setView] = useState('table'); // 'table' or 'card'
-
-  // Removed allCourses and related filtering logic
-  // const filtered = allCourses.filter(course => {
-  //   const code = course.subjectCode || '';
-  //   const name = course.nameEn || '';
-  //   const instructor = course.instructorEn || '';
-  //   return (
-  //     code.toLowerCase().includes(search.toLowerCase()) ||
-  //     name.toLowerCase().includes(search.toLowerCase()) ||
-  //     instructor.toLowerCase().includes(search.toLowerCase())
-  //   );
-  // });
+  const [view, setView] = useState('table');
 
   return (
     <div className="p-2 sm:p-4">
@@ -172,14 +149,11 @@ function SyllabusTable() {
               </tr>
             </thead>
             <tbody>
-              {/* Removed filtered.map and related logic */}
-              {/* This section will need to be updated to fetch courses dynamically */}
               <tr>
                 <td className="border-b border-[#e5b3c3] px-2 py-2 font-mono break-all max-w-[120px] align-middle">Course Code</td>
                 <td className="border-b border-[#e5b3c3] px-2 py-2 break-all max-w-[180px] align-middle">Course Name</td>
                 <td className="border-b border-[#e5b3c3] px-2 py-2 break-all max-w-[120px] align-middle">Instructor</td>
                 <td className="border-b border-[#e5b3c3] px-2 py-2 text-center align-middle">
-                  {/* This will need to be updated to fetch syllabusDetail dynamically */}
                   <span className="text-gray-400">No syllabus</span>
                 </td>
               </tr>
@@ -188,11 +162,9 @@ function SyllabusTable() {
         </div>
       ) : (
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-4">
-          {/* Removed filtered.map and related logic */}
-          {/* This section will need to be updated to fetch courses dynamically */}
           <div className={
             'bg-white/80 border border-[#e5b3c3] rounded-2xl shadow-xl p-6 flex flex-col gap-2 hover:shadow-2xl hover:bg-[#f8e6ec] transition ' +
-            'bg-white/80' // Fallback background for card view
+            'bg-white/80'
           }>
             <div className="flex items-center justify-between mb-1">
               <span className="font-mono text-xs bg-[#f8e6ec] text-[#aa003e] px-2 py-1 rounded-full">Course Code</span>
@@ -203,7 +175,6 @@ function SyllabusTable() {
             <div className="text-xs text-gray-500 mb-1">Semester: N/A</div>
             <div className="flex-1"></div>
             <div className="flex justify-end flex-col sm:flex-row gap-2 mt-2">
-              {/* This will need to be updated to fetch syllabusDetail dynamically */}
               <span className="text-gray-400">No syllabus</span>
             </div>
           </div>
