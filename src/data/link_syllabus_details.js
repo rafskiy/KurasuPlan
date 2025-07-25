@@ -1,4 +1,3 @@
-// Script to link syllabus details to course files using subjectCode
 const fs = require('fs');
 const path = require('path');
 
@@ -9,9 +8,7 @@ const courseFiles = [
   'st_clean_with_syllabus.json',
 ];
 
-// Load syllabus details
 const syllabusDetails = JSON.parse(fs.readFileSync(syllabusPath, 'utf-8'));
-// Build a map for fast lookup by subjectCode
 const syllabusMap = {};
 for (const entry of syllabusDetails) {
   if (entry.subjectCode) syllabusMap[entry.subjectCode] = entry;
@@ -29,9 +26,5 @@ for (const file of courseFiles) {
   }
   if (updated) {
     fs.writeFileSync(filePath, JSON.stringify(courses, null, 2), 'utf-8');
-    console.log(`Updated: ${file}`);
-  } else {
-    console.log(`No updates for: ${file}`);
   }
 }
-console.log('Linking complete.');

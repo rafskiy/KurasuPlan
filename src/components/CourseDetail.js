@@ -44,14 +44,11 @@ function CourseDetail() {
               ))}
             </div>
           ) : (
-            <>
-              <h3 className="text-lg font-semibold mb-1">Full Page Text</h3>
-              <pre className="bg-gray-100 p-2 rounded whitespace-pre-wrap text-xs max-h-96 overflow-y-auto">{course.syllabusDetail.bodyText}</pre>
-            </>
+            <div>No syllabus tables available.</div>
           )}
         </div>
       ) : (
-        <p>No syllabus details available.</p>
+        <div>No syllabus details available.</div>
       )}
     </div>
   );

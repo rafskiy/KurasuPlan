@@ -5,8 +5,6 @@ const inputPath = path.join(__dirname, 'src', 'data', 'all_syllabus_details_2025
 const outputPath = path.join(__dirname, 'src', 'data', 'all_syllabus_details_2025_clean.json');
 
 function isValidCourse(entry) {
-  // Adjust this logic if the error field is different
-  // Remove if entry has an 'error' property or course property contains 'error'
   if (!entry) return false;
   if (entry.error) return false;
   if (entry.course && typeof entry.course === 'string' && entry.course.toLowerCase().includes('error')) return false;
@@ -67,7 +65,6 @@ function cleanLargeJsonFile(input, output) {
     }
     writeStream.write(']\n');
     writeStream.end();
-    console.log('Cleaning complete. Output written to', output);
   });
 
   readStream.on('error', err => {
